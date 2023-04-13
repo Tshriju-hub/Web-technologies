@@ -1,0 +1,39 @@
+*{
+    font-size: 50px;
+    font-family:'Times New Roman', Times, serif;
+}
+h1{
+    background-color:bisque;
+    color:chocolate;
+    font-family: 'Fasthand', cursive;;
+    /*font-size:60px;*/
+}
+.p1{
+    background-color:chocolate;
+    color:antiquewhite;
+    /*font-size:20px;*/
+    font-style:italic;
+}
+.p2{
+    background-color:plum;
+    color:whitesmoke;
+    /*font-size: 20px;*/
+    font-style:italic;
+}
+.p3{
+    background-color:antiquewhite;
+    color:mediumslateblue;
+    /*font-size: 20px;*/
+    font-style:italic;
+}
+.p3:hover{
+    background-color:aquamarine;
+    color: aliceblue;
+}
+img{
+    width:500px;
+    height:500px;
+}
+img[alt]{
+    color:bisque;
+}
