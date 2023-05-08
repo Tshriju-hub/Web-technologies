@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    <script>
+        /*var a = 10;
+        {
+            var a =12;
+            console.log(a);
+        }
+        console.log(a);*/
+        let a = 10;
+        {
+            let a =12;
+            console.log(a);
+        }
+        console.log(a);
+
+        const items ={
+            name: "Shreeju",
+            age:18,
+            address: "Kirtipur"
+        }
+        console.log(items);
+        const dictionary={
+            accept : "receive",
+            break : "split",
+            principle : "rule"
+        }
+        console.log(dictionary);
+        const name = prompt("What's your name?")
+        console.log(name);
+
+       /* age= prompt("What's your age?:")
+        if (age>0){
+            alert ("Valid age")
+        } else {
+            alert("Invalid age")
+        }*/
+        age= prompt("What's your age?:")
+        if (age>0 && age<=12){
+            alert ("Infant")
+        } else if (age>=13 && age<=19){
+            alert ("Teenagers")
+        } else if ( age>=20 && age<=50){
+            alert("adult")
+        } else if (age>=51){
+            alert ("old")
+        } else {
+            alert ("Invalid age")
+        }
+    </script>
+</body>
+</html>
