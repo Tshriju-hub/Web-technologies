@@ -44,16 +44,27 @@
         }*/
         age= prompt("What's your age?:")
         if (age>0 && age<=12){
-            alert ("Infant")
+            alert ("Infant");
         } else if (age>=13 && age<=19){
-            alert ("Teenagers")
+            alert ("Teenagers");
         } else if ( age>=20 && age<=50){
-            alert("adult")
+            alert("adult");
         } else if (age>=51){
-            alert ("old")
+            alert ("old");
         } else {
-            alert ("Invalid age")
+            alert ("Invalid age");
         }
+
+        for (i=0;i<=100;i++){
+            console.log(i);
+        }
+
+        let total = 0 ;
+        function sum (a,b){
+        total = a + b;
+        return total;
+    }
+    console.log(sum(1,2));
     </script>
 </body>
-</html>
+</html> 
