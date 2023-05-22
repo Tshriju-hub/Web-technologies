@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+    body{
+    overflow:hidden;
+}
+.container{
+    width: 100%;
+    height: 15vh;
+    background: linear-gradient(135deg,antiquewhite 30%,plum)
+    
+}
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 80px;
+    line-height: 80px;
+}
+.logo{
+    width:30%;
+    min-height: vh;
+
+}
+.navItems{
+    margin-left: 800px;
+    display: flex;
+}
+.navItems li{
+    list-style: none;
+    margin: 0 30px 80px;
+}
+.navItems li a{
+    font-size:19px;
+    color:rgb(37, 31, 31);
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: 'Prompt', sans-serif;
+}
+.navItems li:hover a{
+    color: #A3C7D6;
+}
+.links a{
+    font-size: 30px;
+    color: whitesmoke;
+    margin: 25px 10px;
+}
+.j{
+    margin-top: 20px;
+    margin-left: -90px;
+    width: 20%;
+    height:auto;
+}
+.about{
+    display: flex;
+}
+.para{
+    float:left;
+    width: 50%;
+}
+.about{
+    color:whitesmoke;
+    font-size: 30px;
+}
+.one{
+    margin-left: 165px;
+    margin-top: 80px;
+    font-size: 40px;
+    font-family: 'Heebo', sans-serif;
+    color: #40513B;
+}
+.second{
+    margin-left: 200px;
+    margin-top: 10px;
+    font-size: 40px;
+    font-family: 'Heebo', sans-serif;
+    color: #C69749;
+}
+.line{
+    margin-left: 145px;
+}
+.pic{
+    float: right;
+    width:50%;
+    margin-top: 50px;
+    
+}
+.meme{
+    margin-top: 25px;
+    width: 350px;
+    margin-left: 190px;
+    animation: reveal 1s backwards var(--delay);
+}
+.para1{
+    width:90%;
+    margin-left: 140px;
+    margin-top: 40px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+.para1 span{
+    display: block; opacity:4;
+    animation: reveal 3s backwards var(--delay);
+
+}
+@keyframes reveal{
+    from {translate: 0 60px;}
+    to {translate:none; opacity: 2;}
+}
+@media(min-width:320px) and (max-width:480px){
+    
+    .container {
+            width: 100%;
+            height: 100vh;
+            background-color: #F8F6F4;
+            margin-left: 0px;
+        }
+    .logo {
+        width: 94%;
+        min-height: vh;
+        margin-left: 96px;
+    }
+    .navItems li {
+        list-style: none;
+        margin: 2px 3px 16px;
+    }
+    .about {
+        font-size: 22px;
+    }
+    .navItems li a {
+        font-size: 11px;
+    }
+    .one {
+        margin-left: 43px;
+        margin-top: 50px;
+        font-size: 36px;}
+        .second {
+            margin-left: 73px;
+            margin-top: -2px;
+            font-size: 34px;}
+.line {
+    margin-left: -15px;
+}
+.para1 {
+    width: 119%;
+    margin-left: 31px;
+    margin-top: 14px;
+    font-size: 15px;
+}
+.meme {
+    margin-top: 139px;
+    width: 229px;
+    margin-left: -11px;}
+     
