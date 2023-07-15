@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(cloudd.jpg);
+  }
+  
+  .card {
+    max-width:1000px;
+    margin: 40px auto;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 40px;
+  }
+  @keyframes blink {
+    0% { background-color: #f5f5f5; }
+    50% { background-color: #fff; }
+    100% { background-color: #f5f5f5; }
+  }
+  .card {
+    animation: blink 1s infinite;
+  }
+  
+  .search {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .search-bar {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  .search button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .weather {
+    text-align: center;
+  }
+  
+  .weather.loading::after {
+    content: "Loading...";
+    display: block;
+    margin-top: 20px;
+    font-style: italic;
+    color: #888;
+  }
+  
+  .date {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .city {
+    margin: 10px 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .details {
+    margin-top: 20px;
+  }
+  
+  .icon {
+    width: 100px;
+  }
+  
+  .description {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #666;
+  }
+  
+  .temp,
+  .humidity,
+  .wind,
+  .max,
+  .min,
+  .rainfall {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .temp {
+    font-weight: bold;
+  }
+  
+  .humidity,
+  .wind,
+  .max,
+  .min,
+  .rainfall {
+    font-weight: normal;
+  }
+  
+  .error {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #ff3d3d;
+  }
+  
+  .error::before {
+    content: "⚠ ";
+  }
+  /* Temperature styles */
+.temp {
+    font-size: 24px;
+    color: #ff5722;
+    font-weight: bold;
+  }
+  
+  /* Humidity styles */
+  .humidity {
+    font-size: 18px;
+    color: #03a9f4;
+  }
+  
+  /* Wind styles */
+  .wind {
+    font-size: 16px;
+    color: #4caf50;
+  }
+  
+  /* Maximum temperature styles */
+  .max {
+    font-size: 16px;
+    color: #9c27b0;
+  }
+  
+  /* Minimum temperature styles */
+  .min {
+    font-size: 16px;
+    color: #f44336;
+  }
+  
+  /* Rainfall styles */
+  .rainfall {
+    font-size: 16px;
+    color: #607d8b;
+  }
+  
+  

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 4</title>
+</head>
+<body>
+    <script>
+        async function fetchData(){
+        const response= await fetch('https://dummyjson.com/products/1');
+        const datas= await response.json();
+        console.log(datas)
+        var brandvar=document.getElementById("brand")
+        brandvar.textContent = datas.brand;
+        var image=document.getAllElementsById("images")
+        image.src=datas.image[1];
+        var describe=document.getElementById("description")
+        describe.textcontent=datas.describe;
+    }
+    fetchData();
+    </script>
+    <h1 id="brand"></h1>
+    <image id="image">
+    <p id ="description"></p>
+</body>
+</html>
