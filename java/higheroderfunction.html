@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num=[1,2,3,4,5];//to make a new array
+        num.forEach((num)=>{
+            console.log(num*2);
+        });
+        let newarray=num.map((num)=>{
+            return num*2;
+        });
+        console.log(newarray);//to satisfy new condition
+        let evenarray=num.filter((num)=>{
+            return num%2==0;
+        });
+        console.log(evenarray)
+        let a1=newarray.filter((num)=>{
+            return num%2==0;
+        });
+        console.log(a1)//to get a single output
+        let sumofarray=a1.reduce((a,b)=>{
+            return a+b;
+        });
+        console.log(sumofarray)
+    </script>
+</body>
+</html>
